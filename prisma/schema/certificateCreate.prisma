@@ -1,0 +1,11 @@
+model Certificate {
+  id             String   @id @default(cuid()) @map("_id") 
+  eventId        String
+  certificateImg String   
+  nameX          Float
+  nameY          Float
+  qrX            Float
+  qrY            Float
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
